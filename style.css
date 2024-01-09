@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    background-color: #18181800;
+}
+
+footer{
+    height: 15vh;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#banner{
+    height: 100vh;
+    background-image: url(./images/pakata-goh-RDolnHtjVCY-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: black;
+    display: grid;
+}
+
+#pageNav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #ffffff9a;
+    opacity: 0.6;
+    height: fit-content;
+    color: #000;
+    z-index: 999;
+}
+
+.name{
+    width: 120px;
+}
+
+.container{
+    padding: 15px;
+    display: grid;
+    row-gap: 4rem;
+
+}
+
+#intro{
+    height: 80vh;
+    width: 70vw;
+    align-self: center;
+    justify-self: center;
+    font-size: x-large;
+    font-weight: bold;
+    text-align: center;
+    transform: rotate(-30deg);
+    position: relative;
+    left: -42%;
+    background-color: #ffffff9a;
+    opacity: 0.6;
+}
+
+#phrase{
+    width: 2vw;
+    height: 28vh;
+    font-size: xx-large;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 10vh;
+    left: 2vw;
+    letter-spacing: 4px;
+    opacity: 1;
+    z-index: 99;
+    color: #051863;
+}
+
+#services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 19px;
+    column-gap: 20px;
+
+}
+
+.service-box{
+    text-align: center;
+}
+
+.image1{
+    background-image: url(./images/upgrade-3727076_640\ \(1\).jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+
+.image2{
+    background-image: url(./images/Error.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.image3{
+    background-image: url(./images/trojan.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+#testimoinals{
+    display: grid;
+    border: hwb(0 80% 20%) solid 2px;
+    border-radius: 15px;
+    padding: 14px;
+    box-shadow: 10px 10px 19px 4px rgba(0,0,0,0.4);
+}
+
+.avatar{
+    background-image: url(./images/avatar.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    justify-self: center;
+    margin-bottom: 25px;
+}
+
+h2{
+    margin-bottom: 15px;
+    z-index: 99;
+}
+
+#why-us{
+    padding: 20px;
+    background-color: #fff;
+    border: hwb(0 80% 20%) dotted 2px;
+    box-shadow: 10px 10px 19px 4px rgba(0,0,0,0.4);
+    border-radius: 15px;
+}
+
+li{
+    margin: 12px;
+}
+
+.hidden{
+    opacity: 0;
+    filter: blur(9px);
+    transform: translateX(-100%);
+    animation: 1s ease-in-out slide-in;
+    transition: all 1.1s;
+}
+
+.show{
+    filter: blur(0);
+    transform: translateX(0);
+    opacity: 1;
+}
+
+@keyframes slide-in{
+    from{
+        margin: 1.7rem;
+        letter-spacing: 20px;
+    }
+    to{
+        letter-spacing: normal;
+        margin: 0;
+    }
+}
+
+#icons{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40vw;
+    margin-top: 9px;
+}
+
+/* For Mobile Devices */
+
+@media(max-width: 560px){
+    #services{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
